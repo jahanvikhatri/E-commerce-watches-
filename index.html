@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LUXE - Intricately crafted high-end luxury watches. Discover timeless precision, mechanical mastery, and unparalleled sophistication.">
+    <title>LUXE | Haute Horlogerie & Timeless Luxury Watches</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Preconnect to Google Fonts for performance optimization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+    <!-- ---------------- OMEGA-STYLE LUXURY HEADER ---------------- -->
+    <header id="main-header">
+        <!-- 1. Top Utility Banner (Omega Signature) -->
+        <div class="header-top-banner">
+            <div class="container top-banner-container">
+                <div class="top-banner-left">
+                    <a href="#" class="top-banner-link" id="btn-boutique-locator">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        Find a Boutique
+                    </a>
+                </div>
+                <div class="top-banner-right">
+                    <a href="#" class="top-banner-link" id="btn-comparator">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="20" x2="18" y2="10"></line>
+                            <line x1="12" y1="20" x2="12" y2="4"></line>
+                            <line x1="6" y1="20" x2="6" y2="14"></line>
+                        </svg>
+                        Watch Comparator (0)
+                    </a>
+                    <span class="banner-separator">|</span>
+                    <a href="#" class="top-banner-link" id="btn-support">Customer Care</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. Main Navigation Bar -->
+        <div class="header-main-nav">
+            <div class="container nav-container">
+                <!-- Left: Menu Links (Hoverable watches trigger Mega Menu) -->
+                <nav class="nav-left">
+                    <ul class="nav-menu">
+                        <li class="has-mega-menu">
+                            <a href="#collection" class="nav-link" id="link-watches">Watches</a>
+                        </li>
+                        <li><a href="#heritage" class="nav-link">Our Atelier</a></li>
+                        <li><a href="#footer-section" class="nav-link">World of LUXE</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Center: Omega-style stacked Brand Crest & Logo -->
+                <div class="nav-center">
+                    <a href="#" class="logo-stack" id="brand-logo" aria-label="LUXE Homepage">
+                        <svg class="logo-crest" width="22" height="22" viewBox="0 0 100 100" fill="none">
+                            <!-- Premium geometric diamond crest representing time & infinity -->
+                            <path d="M50 5 L90 50 L50 95 L10 50 Z" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
+                            <path d="M50 5 L50 95" stroke="currentColor" stroke-width="2"/>
+                            <path d="M10 50 L90 50" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="50" cy="50" r="12" fill="none" stroke="currentColor" stroke-width="3"/>
+                        </svg>
+                        <span class="logo-title">LUXE</span>
+                    </a>
+                </div>
+                
+                <!-- Right: Utilities & Boutique Reserve -->
+                <div class="nav-right nav-actions">
+                    <!-- Search Button -->
+                    <button class="nav-btn" aria-label="Search Collection" id="btn-search">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                    <!-- Favorites Heart Button -->
+                    <button class="nav-btn" aria-label="Favorites List" id="btn-wishlist">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                        <span class="btn-badge" id="wishlist-count">0</span>
+                    </button>
+                    <!-- Cart Shopping Bag Button -->
+                    <button class="nav-btn" aria-label="Shopping Bag" id="btn-cart">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <path d="M16 10a4 4 0 0 1-8 0"></path>
+                        </svg>
+                    </button>
+                    <!-- Reserve Booking CTA -->
+                    <button class="btn-cta" id="btn-nav-reserve">Book Private Viewing</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. Dynamic Dropdown Mega Menu (Omega E-commerce Style) -->
+        <div class="nav-mega-menu" id="watches-mega-menu">
+            <div class="container mega-menu-container">
+                <!-- Column 1: Sovereign -->
+                <div class="mega-menu-column">
+                    <h5 class="mega-menu-title">Sovereign Collection</h5>
+                    <ul class="mega-menu-links">
+                        <li><a href="#collection" class="mega-link">Sovereign Classic Automatic</a></li>
+                        <li><a href="#collection" class="mega-link">Sovereign Steel Chronometer</a></li>
+                        <li><a href="#collection" class="mega-link">Sovereign Diamond Bezel</a></li>
+                        <li><a href="#collection" class="mega-link explore-link">Explore Sovereign →</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 2: Vantage -->
+                <div class="mega-menu-column">
+                    <h5 class="mega-menu-title">Vantage Sports</h5>
+                    <ul class="mega-menu-links">
+                        <li><a href="#collection" class="mega-link">Vantage Sport Leather</a></li>
+                        <li><a href="#collection" class="mega-link">Vantage Carbon Edition</a></li>
+                        <li><a href="#collection" class="mega-link">Vantage Chronograph Rose Gold</a></li>
+                        <li><a href="#collection" class="mega-link explore-link">Explore Vantage →</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3: Chronos -->
+                <div class="mega-menu-column">
+                    <h5 class="mega-menu-title">Chronos Skeleton</h5>
+                    <ul class="mega-menu-links">
+                        <li><a href="#collection" class="mega-link">Chronos Tourbillon Mechanical</a></li>
+                        <li><a href="#collection" class="mega-link">Chronos Skeleton Blackout</a></li>
+                        <li><a href="#collection" class="mega-link">Chronos Atelier Bespoke</a></li>
+                        <li><a href="#collection" class="mega-link explore-link">Explore Chronos →</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4: Curated Preview -->
+                <div class="mega-menu-column mega-menu-showcase">
+                    <div class="mega-showcase-box">
+                        <img src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=300&auto=format&fit=crop" 
+                             alt="Featured Atelier Mechanism" 
+                             class="mega-showcase-img">
+                        <div class="mega-showcase-content">
+                            <h6>World of Horology</h6>
+                            <p>Hand-assembled mechanical movements certified at our Geneva atelier.</p>
+                            <a href="#heritage" class="mega-showcase-btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ---------------- CINEMATIC FULL-IMAGE HERO SECTION ---------------- -->
+    <section class="hero" id="hero-section">
+        <div class="hero-bg">
+            <div class="hero-image-wrapper" id="hero-img-container">
+                <img src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?q=80&w=1600&auto=format&fit=crop" 
+                     alt="LUXE Signature Timepiece cinematic background" 
+                     class="hero-image" 
+                     id="hero-bg-img">
+            </div>
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="container hero-container">
+            <div class="hero-content" id="hero-content-box">
+                <span class="hero-subtitle">The Pinnacle of Precision</span>
+                <h1 class="hero-title">Timelessness,<br>Re-imagined<span>.</span></h1>
+                <p class="hero-description">
+                    For those who command their own destiny. LUXE unites master horology with high-contrast, modern sculptural forms in platinum and deep shadow.
+                </p>
+                <div class="hero-ctas">
+                    <button class="btn-primary" id="btn-hero-explore">Explore Models</button>
+                    <button class="btn-secondary" id="btn-hero-story">The Heritage</button>
+                </div>
+            </div>
+        </div>
+        
+        <a href="#collection" class="hero-scroll-indicator" aria-label="Scroll Down">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </a>
+    </section>
+
+    <!-- ---------------- FEATURED COLLECTION SECTION ---------------- -->
+    <section class="collection" id="collection">
+        <div class="container">
+            <div class="collection-header" id="coll-header">
+                <span class="section-subtitle">Curated Editions</span>
+                <h2 class="section-title">The Signature <span>Collection</span></h2>
+            </div>
+            
+            <div class="collection-grid">
+                <!-- Watch Card 1: Classic -->
+                <div class="card-wrapper">
+                    <article class="product-card" data-tilt>
+                        <div class="card-image-container">
+                            <img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?q=80&w=800&auto=format&fit=crop" 
+                                 alt="LUXE Sovereign Classic Platinum watch" 
+                                 class="product-image">
+                        </div>
+                        <div class="card-info">
+                            <span class="product-tag">Calibre 101 // Automatic</span>
+                            <h3 class="product-name">Sovereign Classic</h3>
+                            <p class="product-description">A timeless steel-body watch with a sleek blue face and dark metallic strap. Timeless, modern, and highly prestigious.</p>
+                            <div class="card-footer">
+                                <span class="product-price">$14,500</span>
+                                <button class="btn-card-buy" id="buy-sovereign">
+                                    Enquire 
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <!-- Watch Card 2: Sport -->
+                <div class="card-wrapper">
+                    <article class="product-card" data-tilt>
+                        <div class="card-image-container">
+                            <img src="https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?q=80&w=800&auto=format&fit=crop" 
+                                 alt="LUXE Vantage Sport Chrono watch" 
+                                 class="product-image">
+                        </div>
+                        <div class="card-info">
+                            <span class="product-tag">Calibre 303 // Chronograph</span>
+                            <h3 class="product-name">Vantage Sport</h3>
+                            <p class="product-description">Minimalist, high-performance, dark sports aesthetic watch with leather stitching. Represents active sophistication.</p>
+                            <div class="card-footer">
+                                <span class="product-price">$16,200</span>
+                                <button class="btn-card-buy" id="buy-vantage">
+                                    Enquire 
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <!-- Watch Card 3: Skeleton -->
+                <div class="card-wrapper">
+                    <article class="product-card" data-tilt>
+                        <div class="card-image-container">
+                            <img src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=800&auto=format&fit=crop" 
+                                 alt="LUXE Chronos Skeleton mechanical watch" 
+                                 class="product-image">
+                        </div>
+                        <div class="card-info">
+                            <span class="product-tag">Calibre 707 // Tourbillon</span>
+                            <h3 class="product-name">Chronos Skeleton</h3>
+                            <p class="product-description">For the connoisseur—showing the complex internal mechanical gears, tourbillon movements, and absolute watchmaking craftsmanship.</p>
+                            <div class="card-footer">
+                                <span class="product-price">$28,900</span>
+                                <button class="btn-card-buy" id="buy-chronos">
+                                    Enquire 
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ---------------- REFINED FOOTER ---------------- -->
+    <footer id="footer-section">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo" id="footer-logo">LUXE<span>.</span></a>
+                    <p class="footer-desc">
+                        Creating extraordinary, handmade chronometers for individuals who define luxury on their own terms. Since 1982.
+                    </p>
+                    <div class="footer-socials">
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="YouTube">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"></path>
+                                <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polygon>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-heading">Collections</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Sovereign Classic</a></li>
+                        <li><a href="#" class="footer-link">Vantage Sport</a></li>
+                        <li><a href="#" class="footer-link">Chronos Skeleton</a></li>
+                        <li><a href="#" class="footer-link">Special Limited Editions</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-heading">Craftsmanship</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Our Heritage</a></li>
+                        <li><a href="#" class="footer-link">Tourbillon Engineering</a></li>
+                        <li><a href="#" class="footer-link">Sustainable Sourcing</a></li>
+                        <li><a href="#" class="footer-link">Atelier Journal</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-heading">Bespoke</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Private Viewing</a></li>
+                        <li><a href="#" class="footer-link">Atelier Consultations</a></li>
+                        <li><a href="#" class="footer-link">Watch Care & Repairs</a></li>
+                        <li><a href="#" class="footer-link">Find a Boutique</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 LUXE. All Rights Reserved. Crafted with unmatched precision.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Anti-Counterfeiting</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive script initialization -->
+    <script src="script.js"></script>
+</body>
+</html>
